@@ -1,2 +1,39 @@
-Arquitectura de computadores
-jj
+# Arquitecturaa de un computador 
+
+## Actividad 1
+
+### ¿Que es un computador moderno? 
+
+Es una maquina programable que procesa los datos que le da el usuario en lenguaje ensamblador y los procesa en lenguaje maquina 
+
+### ¿Cuales es son sus partes? 
+
+Sus partes constan de una CPU, RAM, ROM, pantalla y teclado 
+
+## Actividad 2 
+
+### ¿Que es entonces un programa? 
+
+Es una serie de instrucciones que estan escritas en lenguaje ensamblador para luego llevarse a cabo en lenguaje maquina 
+
+### ¿Que es un lenguaje ensamblador? 
+
+Es la forma en la que el usuario se communica con la maquina para dar cada una de las instrucciones deseadas 
+
+### ¿Que es lenguaje de maquina? 
+
+Lenguaje binario que utiliza el computador para realizar las instrucciones dadas por el usuario 
+
+## Actividad 3 
+
+### ¿Que son PC, D y A? 
+
+PC: son los registros que estan adentro de la cpu y guardan información 
+D: sirve para guardar datos temporalmente que van a ser usados luego por la cpu 
+A: almacena la dirección de memoria de la siguiente instrucción que se va ejecutar 
+
+### ¿Para que los usa la CPU? 
+
+Utiliza PC para guardar direccion que se va ejucutar automaticamente despues de cada instrucción, en el cado de D lo usa para guardar datos temporales como los que van o vienen a la memoria, luego utiliza A  para tener el registro de direcciones y guardarlas en la memoria 
+
+
