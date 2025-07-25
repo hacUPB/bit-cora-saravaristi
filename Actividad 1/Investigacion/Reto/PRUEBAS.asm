@@ -1,8 +1,5 @@
-@R1      
-D=M     
-@R2
-D=D+M    
-@69
-D=D+A   
+@R1
+A=M
+D=M
 @R4
-M=D      
+M=D

@@ -1,40 +1,50 @@
 //Puntos 1 al 7
+// 1. Carga en D el valor 1978
 @1978
 D=A
+
+// 2. Guarda en la posición 100 de la RAM el número 69
 @69
-D=A 
+D=A
 @100
-D=A 
+M=D
+
+// 3. Guarda en la posición 200 de la RAM el contenido de la posición 24 de la RAM
 @24
+D=M
+@200
 M=D
-@15
-D=A 
+
+// 4. Lee lo que hay en la posición 100 de la RAM, resta 15 y guarda el resultado en la posición 100 de la RAM
 @100
-M=M-D
-@80
-D=A 
-@0
+D=M
+@15
+D=D-A
+@100
 M=D
-@50
-D=A 
-@1
-M=D 
+
+// 5. Suma RAM[0], RAM[1] y la constante 69. Guarda el resultado en RAM[2]
 @0
-M=D+M 
+D=M
+@1
+D=D+M
 @69
-D=A 
+D=D+A
 @2
-M=D 
-@2
-M=D+M 
+M=D
+
+// 6. Si el valor almacenado en D es igual a 0 salta a la posición 100 de la ROM
 @100
 D;JEQ
+
+// 7. Si RAM[100] < 100 salta a la posición 20 de la ROM
 @100
 D=M
 @100
 D=D-A
 @20
 D;JLT
+
 
 //8. Considera el siguiente programa:
 
@@ -124,17 +134,34 @@ M=D
 ​
 //13. Implementa en ensamblador: 
 
-
-
+@R0
+D=M
+@NEG
+D;JLT
+@1
+D=A
+@R1
+M=D
+@LOOP
+0;JMP
+(NEG)
+@1
+D=-A
+@R1
+M=D
+(LOOP)
+@LOOP
+0;JMP
 
 ​
 //14. Se implementa en ensamblador:
 
 @R1
+A=M
 D=M
 @R4
 M=D
-
+ 
 //15. Implementa en ensamblador el siguiente problema. En la posición R0 está almacenada la dirección inicial de una región de memoria. En la posición R1 está almacenado el tamaño de la región de memoria. Almacena un -1 en esa región de memoria.
 
 @R0
@@ -145,7 +172,6 @@ M=D
 D=M
 @count
 M=D        
-
 (LOOP)
 @count
 D=M
@@ -154,16 +180,12 @@ D;JEQ
 @ptr
 A=M        
 M=-1      
-
 @ptr
 M=M+1     
-
 @count
 M=M-1     
-
 @LOOP
 0;JMP
-
 (END)
 
 //16. Implementa en lenguaje ensamblador el siguiente programa:
@@ -620,7 +642,7 @@ D=0
 
 //¿Qué hace este programa?
 
-//Calcula una dirección base: 16384 + 16 = 16400, luego se realizan otras operaciones con valores como 24576 y 19 para despue almacenae el valor 16396 en RAM[16] y por ultimo se hace un salto incondicional a una dirección anterior (@4 → 0;JMP), lo que genera un ciclo infinito 
+//Calcula una dirección base: 16384 + 16 = 16400, luego se realizan otras operaciones con valores como 24576 y 19 para despue almacenar el valor 16396 en RAM[16] y por ultimo se hace un salto incondicional a una dirección anterior (@4 → 0;JMP), lo que genera un ciclo infinito 
 
 //20. Implementa un programa en lenguaje ensamblador que dibuje el bitmap que diseñaste en la pantalla solo si se presiona la tecla “d”.
 
