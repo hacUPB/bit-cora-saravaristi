@@ -12,7 +12,11 @@ En hack se utilizan 16383 registros en RAM para guardar datos, el espacio 16384 
 
 ### Inventa un programa que haga uso de la entrada-salida mapeada a memoria. 
 
+
+
 ### Investiga el funcionamiento del programa con el simulador. 
+
+
 
 ## Actividad 02 
 

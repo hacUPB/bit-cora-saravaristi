@@ -6,28 +6,7 @@ D=D-A
 @draw
 D;JEQ
 @KEYBOARD
-D=M 
-@0
-D=D-A
-@ERASE
-D;JEQ
-@KEYBOARD
 0;JMP
-@KEYBOARD
-0;JMP
-(ERASE)
-@SCREEN
-D=A
-@addr
-M=D 
-@8192
-D=A 
-@count
-M=D 
-(loopErase)
-@count
-D=M 
-D;JEQ
 (draw)
 	// put bitmap location value in R12
 	// put code return address in R13
@@ -428,3 +407,8 @@ D;JEQ
     (END)
     @END
     0;JMP
+(ERASE)
+@SCREEN
+D=A
+@addr
+M=D
