@@ -1,0 +1,14 @@
+    (LOOP)
+    @24576
+    D=M
+    @ON
+    D;JGT
+    @16384
+    M=0
+    @LOOP
+    0;JMP
+    (ON)
+    @16384
+    M=-1
+    @LOOP
+    0;JMP
