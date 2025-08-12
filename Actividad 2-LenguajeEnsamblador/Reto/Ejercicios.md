@@ -137,7 +137,7 @@ punt = &var;
 *punt = 20;
 ```
 
-// Traducción 
+### Traducción 
 
 ```
 @10
@@ -166,7 +166,7 @@ int *p_var;
 p_var = &var;
 bis = *p_var;
 ```
-// Traducción 
+### Traducción 
 
 ```
 @10
@@ -200,7 +200,7 @@ p_var = &var;
 bis = *p_var;
 ```
 
-// Traducción 
+### Traducción 
 
 ```
 @10
@@ -261,7 +261,7 @@ int main() {
 }
 ```
 
-// Traducción 
+### Traducción 
 
 ```
 @6
