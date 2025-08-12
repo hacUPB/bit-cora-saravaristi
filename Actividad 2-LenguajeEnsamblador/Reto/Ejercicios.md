@@ -76,21 +76,19 @@ Para este reto tuve que recordar algunos conceptos de materias vistas en semestr
 
 ```
 @i
-D=M 
-@0
-D=A
+M=0
 @sum
-M=D 
+M=0
 (FOR)
 @i
 D=M
 @100
 D=D-A
 @END
-D;JGT
-@i
-D=M
+D;JEQ
 @sum
+M=M+1
+@i
 M=M+1
 @FOR
 0;JMP
@@ -142,7 +140,7 @@ punt = &var;
 ```
 @10
 D=A
-16
+@16
 M=D
 @16
 D=A
