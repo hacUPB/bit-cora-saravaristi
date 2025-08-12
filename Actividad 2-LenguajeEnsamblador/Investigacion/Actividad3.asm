@@ -1,12 +1,18 @@
-@KEYBOARD
-D=M
-@100
-D=D-A
-@draw
-D;JEQ
-@CLEAR
-0;JMP
-(draw)
+    (LOOP)
+    @KEYBOARD
+    D=M 
+    @100
+    D=D-A
+    @draw
+    D;JEQ 
+    @KEYBOARD
+    D=M 
+    @101
+    D=D-A
+	@CLEAR
+	D;JEQ
+	@LOOP
+	0;JMP
 	// put bitmap location value in R12
 	// put code return address in R13
 	@SCREEN
@@ -400,9 +406,25 @@ D;JEQ
 	AD=A+1 // D holds addr
 	M=1
 	// return
-	@KEYBOARD
+	@R13
 	A=M
 	D;JMP
-    (END)
-    @END
-    0;JMP
+	(CLEAR)
+	@SCREEN
+	D=A
+	@i
+	M=D
+	(CLEAR_LOOP)
+	@i
+	A=M
+	M=0
+	@i
+	M=M+1
+	@KEYBOARD
+	D=A
+	@i
+	D=D-M
+	@CLEAR_LOOP
+	D;JGT
+	@LOOP
+	0;JMP	

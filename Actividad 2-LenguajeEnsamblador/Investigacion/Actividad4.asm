@@ -1,16 +1,14 @@
-(KEYBOARD)
-@KBD
-D=M
-@100
-D=D-A
-@draw
-D;JEQ
+(LOOP)
 @KEYBOARD
 D=M 
 @100
 D=D-A
-@erase
+@draw
+D;JEQ 
+D=M
+@CLEAR
 D;JEQ
+@LOOP
 0;JMP
 (draw)
 	// put bitmap location value in R12
@@ -406,9 +404,25 @@ D;JEQ
 	AD=A+1 // D holds addr
 	M=1
 	// return
-	@KEYBOARD
+	@R13
 	A=M
 	D;JMP
-    (END)
-    @END
-    0;JMP
+    (CLEAR)
+	@SCREEN
+	D=A
+	@i
+	M=D
+	(CLEAR_LOOP)
+	@i
+	A=M
+	M=0
+	@i
+	M=M+1
+	@KEYBOARD
+	D=A
+	@i
+	D=D-M
+	@CLEAR_LOOP
+	D;JGT
+	@LOOP
+	0;JMP
