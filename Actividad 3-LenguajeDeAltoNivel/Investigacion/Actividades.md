@@ -142,4 +142,86 @@ Se utiliza para almacenar la posición de la esfera selecciona y moverla junto c
 
 ### ¿Qué es exactamente lo que está almacenado en el puntero? 
 
-selectedSphere->update(ofGetMouseX(), ofGetMouseY()); Aca no se guarda como tal la esfera seleccionada, pero si su posición de memoria
+selectedSphere->update(ofGetMouseX(), ofGetMouseY()); Aca no se guarda como tal la esfera seleccionada, pero si su posición de memoria 
+
+### ¿Como se gestionan las variables de una aplicación en c++ en cuanto a la memoria RAM? 
+
+Se hace principalmente a traves de stacks o heap donde las variables locales se asignan en filas (stacks) y las variables independientes re1quieren de asignacion dinamica se gestionan en heap 
+
+STACKS: No es necesario preocuparse por liberar la  memoria de forma manual ya que el sistemas las gestiona automaticamente 
+
+HEAPS: El programador es el responsable de usar delete para liberar la memoria manualmente las cual es la asignada coon new para evitar fugas de memoria
+
+### Cuales son los segmentos o areas principales que se asignan para cada tipo de variable? 
+
+En este caso serian int, float, double, long, boolean, string y char
+
+### Tipos de variables 
+
+LOCALES: 
+
+GLOBALES:
+
+ESTATICAS: 
+
+ASIGNADAS DINAMICAMENTE: 
+
+
+## Actividad 06 
+
+### El código anterior tiene un problema. ¿Puedes identificar cuál es? ¿Cómo lo solucionarías? Recuerda que deberías poder seleccionar una esfera y moverla con el mouse. 
+
+Como tal el problema es que no se puede soltar la esfera seleccionada, ya que no se tiene un evento que permita deseleccionar la esfera dentro del codigo, por lo que hay que crear un evento nuevo llamado mouseReleased donde se instancie que al soltar el click izquierdo del mouse sea que selectedSphere = nullptr; 
+
+### Solución 
+
+``` cpp
+#pragma once
+
+#include "ofMain.h"
+
+class Sphere {
+public:
+	Sphere(float x, float y, float radius);
+	void draw();
+	void update(float x, float y);
+	float getX();
+	float getY();
+	float getRadius();
+
+private:
+	float x, y;
+	float radius;
+	ofColor color;
+};
+
+class ofApp : public ofBaseApp {
+
+public:
+	void setup();
+	void update();
+	void draw();
+
+	void mouseMoved(int x, int y);
+	void mousePressed(int x, int y, int button);
+	void mouseReleased(int x, int y, int button);
+
+private:
+	vector<Sphere *> spheres;
+	Sphere * selectedSphere;
+}; 
+```
+Se instancia el metodo publico mouseRealeased 
+
+``` cpp
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button) {
+	if (button == OF_MOUSE_BUTTON_LEFT) {
+		selectedSphere = nullptr;
+	}
+}
+```
+Se crea el evento mouseRealeased donde si se deja de presionar el click izquierdo del mouse se instancia que selectedSphere = nullptr; 
+
+## Actividad 07 
+
