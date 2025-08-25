@@ -179,4 +179,15 @@ bool ofApp::rayIntersectsSphere(const glm::vec3 & rayStart, const glm::vec3 & ra
 	return true;
 }
 ```
-c:\Users\sarav\Videos\Grabaciones de pantalla\Grabación de pantalla 2025-08-24 233030.mp4
+### Explicación 
+
+En este caso se utilizan objetos tipo ofVec3f para almacenar las posiciones de las esferas (spherePositions) de igual forma se utiizan mucho stack y heap, en el programa se utiliza stack para variables temporales o locales que se crean dentro de las funciones que se almacenan en una pila (stack) por lo tanto estas variables tienen un ciclo de vida corto ya que se crean cuando entran a la variable y se destruyen al salir de esta 
+
+
+En la clase ofApp, las variables miembro como spherePositions, sphereRadius o selectedSpherePos se encuentran en stack,, pero si se crearan dinamicamente con new serian un heap, otro ejemplo de heap es la lista de posiciones de spherePositions donde sus objetos estan almacenados en heap en un bloque contiguo de memoria que el vector administra internamente. Por lo tanto es lo que permite que el vector crezca al agregar mas esferas usando la tecla "-" ya que el vector se encarga de reservar mas espacio en heap y mover o copiar los elementos 
+
+
+Tambien hay que tener cuando se dibujan las esferas con ofDrawSphere, los vértices y colores que se mandan a pantalla se procesan por la GPU, usando la memoria de video, pero aun asi las posiciones que se gestionan siguen dentro de la RAM, dentro del heap de std::vector 
+
+
+[Enlace video](https://youtu.be/YYGGmFd8DAE)
