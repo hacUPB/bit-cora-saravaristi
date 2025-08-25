@@ -1,0 +1,42 @@
+### 1. Carga en D el valor 1978 
+![Ejercicio-1](image-2.png)
+
+### 2. Guarda en la posición 100 de la RAM el número 69 
+![Ejercicio-2](image-1.png)
+
+### 3. Guarda en la posición 200 de la RAM el contenido de la posición 24 de la RAM 
+![Ejercicio-3](image-3.png)
+
+### 4. Lee lo que hay en la posición 100 de la RAM, resta 15 y guarda el resultado en la posición 100 de la RAM 
+![Ejercicio-4](image.png) 
+
+### 5. Suma RAM[0], RAM[1] y la constante 69. Guarda el resultado en RAM[2] 
+![Ejercicio-5](image-4.png) 
+
+### 6. Si el valor almacenado en D es igual a 0 salta a la posición 100 de la ROM
+![Ejercicio-6](image-6.png)
+
+### 7. Si RAM[100] < 100 salta a la posición 20 de la ROM
+![Ejercicio-7](image-5.png) 
+
+### 10. Las posiciones de memoria RAM de 0 a 15 tienen los nombres simbólico `R0` a `R15`. Escribe un programa en lenguaje ensamblador que guarde en `R1` la operación `2 * R0`  
+![Ejercicio-10](image-7.png)
+
+### 12. Implemente en ensamblador:  
+![Ejercicio-12](image-8.png)
+
+### 13. Implementa en ensamblador: 
+![Ejercicio-13](image-9.png)
+
+### 14. Se implementa en ensamblador: 
+![Ejercicio-14](image-10.png)
+
+### 15. Implementa en ensamblador el siguiente problema. En la posición R0 está almacenada la dirección inicial de una región de memoria. En la posición R1 está almacenado el tamaño de la región de memoria. Almacena un -1 en esa región de memoria
+![Ejercicio-15](image-11.png)
+
+### 17. Implementa en lenguaje ensamblador:
+![Ejercicio-17](image-12.png)
+
+### 20. Implementa un programa en lenguaje ensamblador que dibuje el bitmap que diseñaste en la pantalla solo si se presiona la tecla “d”
+![Bitmap](image-13.png)
+![Ejercicio-20](image-14.png)
