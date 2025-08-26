@@ -332,4 +332,4 @@ if(!heapObjects.empty()) {
     heapObjects.pop_back();
 }
 ```
-Esta parte como tal se refiere a la accion que se hace al presionar la tecla "f" donde si heapObjects se encuentra vacio de todas formas hace la acción de borrar 
+En esta parte del codigo se verifica que heapObjects este vacia, si esta vacia no hace nada, pero si hay elementos realiza la acción de borrar el objeto, osea libera la memoria heap del elemento al que se esta apuntando en ese momento, en  heapObjects.pop_back(); elimina el ultimo puntero del vector, pero no elimina la memoria heap de este
