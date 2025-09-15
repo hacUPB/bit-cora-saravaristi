@@ -229,9 +229,21 @@ void ofApp::exit() {
 	stars.clear();
 }
 ```
+## Pruebas
+
+Para las pruebas lo que hice fue comentar todo el codigo menos las partes que necesitaba para comprobar que estos estaban funcionando correctamente y tal como lo necesitaba, luego para probar el programa completo lo hice con el depurador, utilizandolo para comprobar que no hubiesen fugas de memoria a la hora de eliminar los nodos de la lista enlazada y la cola, ya que hay unos que se borran automaticamente, pero al presionar el boton c, todos los nodos que existen en ese momemnto se eliminan
 
 ## Capturas del proceso
 
+<img width="1026" height="807" alt="image" src="https://github.com/user-attachments/assets/9c7de7c9-6c38-4a9b-a8fe-c2f97fbfd265" />
+
+<img width="1026" height="807" alt="image" src="https://github.com/user-attachments/assets/74dd8685-3345-46a9-94df-87e91f2e1de6" />
+
+<img width="1026" height="807" alt="image" src="https://github.com/user-attachments/assets/02305e25-a6d1-4cc4-964d-6444516bc14c" />
+
+<img width="1026" height="807" alt="image" src="https://github.com/user-attachments/assets/f52aedc6-4390-44e5-82a1-e3855071169c" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bfe65c03-9903-4475-ac31-7690e1373218" />
 
 ## Video
 [Enlace a mi video](https://youtu.be/foas3fMwvYE)

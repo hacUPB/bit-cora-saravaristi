@@ -68,9 +68,6 @@ Como tal algunas de las ventajas que hay son la libertad de crear objetos y elim
 
 Primero haria un sistema donde cada new tiene un delete, tambien implementaria un metodo clear() para que en algun momento pueda recorrer la lista y eliminar los nodos cuando lo necesite. Otra cosa que haria seria evitar las dobles liberaciones, esto se hace llevando a los puntero a nullptr despues de hacer delete, por ejemplo, head = nullptr;
 
-### 14. Pruebas: pregunta a ChatGPT cómo podrías probar las partes del programa y el programa completo. Luego realiza las pruebas y verifica si los resultados coinciden con tus expectativas. 
-
-
 # Actividad 02 
 
 ### 2. Realiza evaluaciones formativas. Dile a ChatGPT que te genere preguntas para verificar si entiendes cómo funciona el programa. Trata de verificar tus hipótesis usando el depurador y luego con las conclusiones del experimento responde la pregunta de ChatGPT. Continúa con este proceso hasta que estés seguro de que entiendes cómo funciona el programa.
