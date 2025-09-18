@@ -1,0 +1,5 @@
+## Reflexiónes
+
+En esta unidad se trabajo con OpenFrameWorks par analizar como estan implementados y las posibilidades que se tienen con el programa, todo esto con cel objetivo de comprender conceptos de programación de alto nivel.
+
+La ventaja principa de este programa es que los codigos se puedenhacer de forma visual y dinamica lo que facilta la comprensión de los conceptos deseados, a mi en lo personas esta forma de aprendizaje me agrado bastante, ya que yo comprendo mucho mejor las cosas si me las muestran visualmente, en general la programación para mi se me hace complicada, pero de esta forma fue mucho mas facil de comprender. Como en todo programa nuevo hubieron cosas que no logre entender a la primera explicación y tuve que revisar a fondo el codigo e investigar el como se hacian ciertas cosas, aunque como tal no encontre complicada ninguna de las actividades o el reto, todas tenian su dificultad pero aun asi eran realizables si se prestaba la atencion suficiente
