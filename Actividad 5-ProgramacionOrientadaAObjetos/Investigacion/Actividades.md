@@ -54,11 +54,7 @@ Visto desde la memoria es un bloque contiguo de bytes que representan una instan
 
 ### ¿Cómo influyen los atributos y métodos en el tamaño y estructura del objeto? 
 
-
-
-### Conclusión 
-
-
+Como tal los atributos determinan el tamaño del objeto y cada instancia necesita espacio de memoria para almacenar los valores, mientras que los metodos no se guardan dentro de cada objeto
 
 # Sección 2  
 
@@ -182,8 +178,8 @@ El polimorfismo se implementa mediante vtables y vptrs, las vtables contienen pu
 
 ### ¿Cómo se implementan internamente el encapsulamiento, la herencia y el polimorfismo? 
 
-
+El encapsulamiento se implementa de forma que da protección en tiempo de compilación, la herencia se implementa con la organización continua de atributos en memoria y el polimorfismo se implementa con vtable por clase y vptr en cada objeto
 
 ### Análisis: ventajas y desventajas en términos de eficiencia y complejidad.
 
-
+El encapsulamiento no afecta el rendimiento pero le daclaridad y seguridad al programa, la herencia permite reutilización con bajo costo aunque puede complicarse y el polimorfismo ofrece flexibilidad a cambio de una ligera sobrecarga en memoria y tiempo de ejecución
