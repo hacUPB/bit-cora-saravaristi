@@ -90,7 +90,7 @@ El puntero functPtr se guarda dentro de la memoria del objeto y este almacena la
 
 ### ¿Cuál es la relación entre los punteros a métodos y la vtable? 
 
-
+Las vtables son tablas que contienen punteros que apuntan a funciones aprovechando el polimorfismo dinamico, lo que permite llamar metodos en el tiempo de ejecucion del programa, permitiendo usar metodos diferentes del objeto
 
 ### ¿Cómo afectan estos mecanismos al rendimiento del programa? 
 
