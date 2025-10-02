@@ -20,11 +20,21 @@ Hace que las particulas se comporten de cierta forma dependiendo del estado en e
 
 Cree una particula cuadrada que tuviese su propio color que en este caso es amarillo y su propio tamaño que es mas grande que las demas particulas, se comporta de la misma forma a todas las demas
 
+<img width="1026" height="807" alt="image" src="https://github.com/user-attachments/assets/09233a30-7201-48f2-beca-d16970461a63" />
+
 ### Adiciona un nuevo estado. 
+
+
 
 ### Modifica el comportamiento de las partículas. 
 
+Hice dos pruebas, que pasaria si todas las particulas se encuentran suscritas al observer menos las particulas cuadradas, para esto comente addObserver(p); en la fabrica de particulas en la sección especifica de las particulas cuadradad y luego inicie el programa, como se ve en el video, todas las demas particulas son notificadas de un cambio de estado menos las particulas cuadradas las cuales siguen en el estado normal al no ser notificadas y no cambiar de estado
+
+https://github.com/user-attachments/assets/39c2a15b-2dc8-4be6-97d3-9eeb3bc1f6fe
+
 ### Crea otros eventos para notificar a las partículas. 
+
+
 
 # Reto
 
