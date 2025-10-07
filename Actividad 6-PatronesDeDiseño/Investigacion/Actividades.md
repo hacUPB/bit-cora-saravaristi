@@ -1,5 +1,3 @@
-# Sección 1 
-
 # Sección 2 
 
 ### ¿Qué hace el patrón observer en este caso? 
@@ -24,7 +22,9 @@ Cree una particula cuadrada que tuviese su propio color que en este caso es amar
 
 ### Adiciona un nuevo estado. 
 
+En este caso cree un estado de parpadeo que al presionar la tecla "b" las particulas comienzan a parpadear simultaneamente 
 
+https://github.com/user-attachments/assets/55438514-52f4-4fcd-b755-ac89092cb386
 
 ### Modifica el comportamiento de las partículas. 
 
@@ -34,7 +34,9 @@ https://github.com/user-attachments/assets/39c2a15b-2dc8-4be6-97d3-9eeb3bc1f6fe
 
 ### Crea otros eventos para notificar a las partículas. 
 
+Cree un estado mas para que todas las particulas al presionar la tecla "c" van cambiado de color en el esquema del arcoiris
 
+https://github.com/user-attachments/assets/2f62dd19-aa97-4900-848f-ac113ef580ff
 
 # Reto
 
