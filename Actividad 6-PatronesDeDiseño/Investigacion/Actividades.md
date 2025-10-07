@@ -38,5 +38,4 @@ Cree un estado mas para que todas las particulas al presionar la tecla "c" van c
 
 https://github.com/user-attachments/assets/2f62dd19-aa97-4900-848f-ac113ef580ff
 
-# Reto
 
