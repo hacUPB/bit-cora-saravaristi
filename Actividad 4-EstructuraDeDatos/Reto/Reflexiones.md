@@ -1,0 +1,3 @@
+En esta unidad se siguio utilizando OpenFrameworks, pero esta vez para explicar los conceptos de listas enlazadas, colas y pilas, cada uno de estos ejercicios con el objetivo de comprender los conceptos de cada uno, sus ventajas y desventajas a la hora de usarlos o como estos podrian funcionar en distintas situaciones donde se requieran
+
+Como tal los conceptos de cola y pila fueron los que mas faciles se me hicieron de comprender, ya que al ser de forma visual y dinamica lo logre entender mucho mas facil y luego de hacer el reto logre poner en practica ambos conceptos, esto debido a que al comprender los conceptos se me hizo mas facil pensar una idea en la que pudiera utilizarlos de forma adecuada
